@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Claw BBQ Bahrain – Premium American BBQ & fresh crab in Manama. Experience wood‑smoked meats and signature claws.">
+  <title>Claw BBQ Bahrain | American BBQ & Crab</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Three.js for 3D hero -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">CLAW BBQ</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="reservation.html">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="reservation.html" class="nav-cta">Book Now</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section with 3D Canvas -->
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-label">Manama, Bahrain</p>
+      <h1 class="hero-title">Fire Meets<br>The Claw</h1>
+      <p class="hero-subtitle">Wood‑smoked American BBQ and the freshest crab, served in a daring, luxurious atmosphere.</p>
+      <div class="hero-buttons">
+        <a href="reservation.html" class="btn btn-primary">Reserve a Table</a>
+        <a href="menu.html" class="btn btn-outline">Discover the Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="section about-teaser">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2>Born from Smoke & Sea</h2>
+          <p>Claw BBQ Bahrain brings the bold flavours of the American South together with the Gulf’s finest seafood. Our custom-built smokers run all day, infusing brisket, ribs, and chicken with hickory and mesquite, while our crab claws are sourced daily and served dripping in garlic butter.</p>
+          <p>Set inside the Hilton Bahrain, the restaurant blends industrial chic with dark nautical luxury — exposed brick, soft leather, and a glowing amber bar.</p>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Inside Claw BBQ Bahrain">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Menu -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Signature Plates</span>
+        <h2>Claw Favorites</h2>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Smoked Brisket">
+          <div class="menu-card-content"><h4>Texas Smoked Brisket</h4><p>12‑hour smoked prime brisket, house BBQ glaze, pickles, and cornbread.</p><span class="price">18 BHD</span></div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1567620832903-9fc6debc209f?w=600&q=80" alt="King Crab Legs">
+          <div class="menu-card-content"><h4>King Crab Clusters</h4><p>Steamed Alaska king crab, drawn butter, lemon, and Cajun seasoning.</p><span class="price">32 BHD</span></div>
+        </div>
+        <div class="menu-card reveal">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80" alt="Smoked Old Fashioned">
+          <div class="menu-card-content"><h4>Smoked Old Fashioned</h4><p>Bourbon, hickory smoke, maple, and bitters — crafted tableside.</p><span class="price">9 BHD</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Atmosphere</span>
+        <h2>Inside the Pit</h2>
+      </div>
+      <div class="gallery-grid">
+        <img class="reveal" src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Dining area">
+        <img class="reveal" src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=600&q=80" alt="Bar and flames">
+        <img class="reveal" src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600&q=80" alt="Pitmaster at work">
+        <img class="reveal" src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=600&q=80" alt="Private booth">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Guest Love</span>
+        <h2>What They’re Saying</h2>
+      </div>
+      <div class="testimonial-cards">
+        <div class="testimonial-card reveal">
+          <p class="quote">"The brisket is genuinely the best I’ve had outside Texas. And those crab legs… insane. The vibe is dark, sexy, and loud — perfect."</p>
+          <p class="author">— Omar K., Manama</p>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="quote">"We celebrated our anniversary here. They smoked our cocktails at the table and the staff went above and beyond. A true gem in Bahrain."</p>
+          <p class="author">— Layla & Ahmed, Dubai</p>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="quote">"The claw is iconic! I’m still dreaming about the garlic butter crab. Already planning my next visit."</p>
+          <p class="author">— Sarah T., London</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA -->
+  <section class="section reservation-cta">
+    <div class="container reveal">
+      <span class="section-label">Join the Feast</span>
+      <h2>Ready to Get Your Claws Dirty?</h2>
+      <p>Book your table at Claw BBQ Bahrain and dive into a world of smoke, fire, and unforgettable flavour.</p>
+      <a href="reservation.html" class="btn btn-primary">Make a Reservation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Claw BBQ Bahrain</h4><p>Building 4672, Floor Hilton Bahrain<br>44th, Road 2468, Manama</p></div>
+      <div class="footer-col"><h4>Hours</h4><p>Daily: 12:00 – 23:00</p></div>
+      <div class="footer-col"><h4>Contact</h4><p><a href="https://wa.me/97377010133" target="_blank">+973 7701 0133</a></p><p>info@clawbbqbahrain.com</p></div>
+      <div class="footer-col"><h4>Follow</h4><div class="social-links"><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="TripAdvisor">⭐</a></div></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2025 <span class="accent">Claw BBQ Bahrain</span>. Fueled by fire & passion.</p></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+  </html>
